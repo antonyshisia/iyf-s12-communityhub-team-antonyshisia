@@ -1,0 +1,19 @@
+:root { --brand: #2563eb; --ink: #1f2937; --muted: #6b7280; --line: #e5e7eb; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: var(--ink); background: #f8fafc; line-height: 1.6; }
+.header { display: flex; justify-content: space-between; align-items: center;
+          padding: 1rem 2rem; background: var(--brand); color: #fff; flex-wrap: wrap; gap: 1rem; }
+.header h1 { margin: 0; font-size: 1.25rem; }
+.header nav a { color: #fff; text-decoration: none; margin-left: 1rem; }
+.header nav a:hover { text-decoration: underline; }
+.main { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+.post-card { background: #fff; border: 1px solid var(--line); border-radius: 10px;
+             padding: 1.25rem; margin-bottom: 1rem; }
+.post-card h3 { margin: 0 0 .5rem; }
+.post-meta { display: flex; justify-content: space-between; color: var(--muted); font-size: .875rem; }
+.btn { padding: .6rem 1.1rem; border: none; border-radius: 6px; cursor: pointer;
+       font: inherit; margin-right: .5rem; }
+.btn-primary { background: var(--brand); color: #fff; }
+.btn-danger  { background: #dc2626; color: #fff; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.footer { text-align: center; padding: 1.5rem; color: var(--muted); }
