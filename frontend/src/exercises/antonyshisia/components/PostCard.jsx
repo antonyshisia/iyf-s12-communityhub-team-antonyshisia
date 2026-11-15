@@ -1,4 +1,4 @@
-function PostCard({ title, excerpt, author, date }) {
+function PostCard({ id, title, excerpt, author, date, likes, onLike, onDelete }) {
     return (
         <article className="post-card">
             <h3>{title}</h3>
@@ -6,6 +6,14 @@ function PostCard({ title, excerpt, author, date }) {
             <div className="post-meta">
                 <span>By {author}</span>
                 <span>{date}</span>
+            </div>
+            <div className="post-actions">
+                <button className="like-button" onClick={() => onLike(id)}>
+                    ❤️ {likes}
+                </button>
+                <button className="delete-button" onClick={() => onDelete(id)}>
+                    Delete
+                </button>
             </div>
         </article>
     );
